@@ -1,2 +1,6 @@
-batch
-(excel)
+Basic skills: batch, excel
+
+Projects:
+2d platformer from open-source python template
+webcrawler (bandcamp-to-rym) (ETL)
+Extentor-skript
