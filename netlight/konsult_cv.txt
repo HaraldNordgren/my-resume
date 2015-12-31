@@ -1,0 +1,37 @@
+rym_adder:
+splinter (selenium front-end?)
+regex (language analysis, etc.)
+argsparse
+
+sanic:
+pygame
+
+lth:
+Java (AWT/Swing) (for GUI)
+OOP
+
+version control:
+svn
+git (github)
+
+test first:
+JUnit
+
+Simple spreadsheet program: (EDAF10)
+Event handlers listeners
+
+concurrecy:
+java threads
+semaphores, locks
+
+network:
+tcp sockets
+remote controlling of a camera via API
+
+computer security:
+cetificates, rsa
+hashing
+
+Gå igenom git-repon för EIT060, FMN011, EDA031, EDAN40, EDAF35
+
+projecteuler.net
