@@ -1,6 +1,6 @@
 rym_adder:
 splinter (selenium front-end?)
-regex (language analysis, etc.)
+regex (language analysis)
 argsparse
 
 sanic:
@@ -29,9 +29,33 @@ tcp sockets
 remote controlling of a camera via API
 
 computer security:
-cetificates, rsa
-hashing
+cetificates, rsa, keystores
+users and login, password hashing
 
-Gå igenom git-repon för EIT060, FMN011, EDA031, EDAN40, EDAF35
+setting up server:
+ssh, php, lsf (openlava)
 
+memory managenement:
+two working implementations of my own malloc and free
+virtual memory, makefile
+
+language analysis:
+spell-check
+code parsing (html, C, command-line input)
+semantic analysis of grammar
+
+database:
+wrote c++ newsserver/database
+dirent, opendir (low-level disk-access, inodes)
+
+audio and video:
+midi player written in haskell (haskore)
+ffmpeg converting multimedia, extracting streams
+image compression in matlab
+
+video compression master thesis
+
+
+
+fler hobby-projekt?
 projecteuler.net
