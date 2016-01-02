@@ -1,0 +1,48 @@
+WEBBUTVECKLARE
+
+Rateyourmusic (RYM) är en hemsida där användare kan katalogisera, betygsätta, recensera och diskutera all sorts utgiven musik. Användarna kan lägga till nya album och ladda upp skivomslag så länge dessa upgifter kan styrkas med hänvisning till ett fysiskt exemplar eller en officiell bandhemsida.
+
+Bandcamp är en streamingsida för framförallt elektronisk musik. Artister och oberoende skivbolag publicerar musik som man kan lyssna på gratis i webbläsaren eller köpa och ladda ner. Sidan har för närvarande inget API.
+
+Spotify är en streamingtjänst för musik som erbjuder ett API för albuminformation.
+
+Jag har varit en aktiv användare av dessa tjänster i många år och tröttande på att manuellt kopiera och flytta över info och fixa med formatering för att lägga till nya album på Rateyourmusic.
+
+Jag skrev därför en webcrawler i Python som med hjälp BeatifulSoup extraherar tillgänlig information. För att navigera Rateyourmusics javascript använde jag Splinter som generar ett browserfönster som automatiseras för att logga in och navigera en hemsida. Jag använde Chrome och dess Developer tools för att hitta de HTML-taggar som motsvarade rätt textrutor, knappar och menyer på hemsidorna.
+
+Med en Bandcamp/Spotify URL och en Rateyourmusic-adress kan skriptet lägga till en artist i databasen, lägga till album, updatera existerande albuminfo, korrigera liten och stor bokstav i titlar med regex, samt ladda upp skivomslag automatiskt.
+
+
+Tekniker: Python 3, BeatifulSoup, Spotipy, Splinter, Argparse
+Miljöer: Ubuntu 14.04, Vim, Google Chrome
+
+
+
+
+SYSTEMUTVECKLARE
+
+Jag har jobbat med videokomprimering på Ericsson. Jag skrev en testmiljö för att ta fram mätadata för experiment nedskalningar av 1080p. Jag mäter bitrate och bildkvalite (MSE) för simulerad uplink och downlink för 120 testfall och använder openpyxl för att dynamiskt flytta över och presentera informationen i Excel och generera grafer.
+
+I python kallar jag på olika binärer i en lång kedja, och hanterar resultaten och bygger en filhierki för att ta vara på outputfiler. Regex används för att extrahera information om bildstorlek och framerate.
+
+Jag beräkningar måste köras på ett linuxkluster då de är räkneintensiva, medan excel kräver ett grafiskt användargränsnitt så jag blir tvungen att hantera skillnader i radbrytning mellan Windows och Linux för att mata utdata från en miljö in i en annan.
+
+Jag deployar jobben på ett kluster för att köra parallelt, och använder fillås för att skydda data mellan parallella processer som annars försöker skriva till samma bitström. Skapa en massiv filstruktur för varje experiment, samt effektivt analysisera loggfiler för att upptäcka fel.
+
+Jag har lagt till features in kodare och avkodare, där jag jobbar nära bitströmmen, vilket har gett vissa vinster. 
+
+Tekniker: Python 2, C/C++, Shell-skript, Platform LSF, LaTeX
+Mijöer: Windows 7, Red Hat linux, Ubuntu 14.04, Visual Studio 2015, Sublime Text, Vim
+
+
+
+SPELUTVECKLARE
+
+Jag hittade källkoden till en enkel 2d-platformare och bytte ut texturer mot Sonic the Hedgehog-sprites och bakgrunder som jag hittade på nätet.
+
+Jag byggde en enkel bana.
+
+Tekniker: Python 2, pygame, imagemagick
+Miljöer: Ubuntu 14.04, Vim
+
+

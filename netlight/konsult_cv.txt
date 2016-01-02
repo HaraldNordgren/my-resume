@@ -1,11 +1,11 @@
 rateyourmusic/betting-crawler:
-crawl html (beatiful soup, extract bandcamp album info)
-Bandcamp has no API, Spotify has one and a python lib for interacting with it
-navigate javascript websites, downloading and uploading images
-(splinter, selenium front-end)
-cookie handling
+-crawl html (beatiful soup, extract bandcamp album info)
+-Bandcamp has no API, Spotify has one and a python lib for interacting with it
+-navigate javascript websites, downloading and uploading images
+-(splinter, selenium front-end)
+-cookie handling
 regex (language analysis, correcting capitalization)
-argsparse for comman-line args, configparser for reading/writing cfg files
+-argsparse for comman-line args, configparser for reading/writing cfg files
 
 extentor-script:
 I discovered a pattern in the old exams urls, but servers are not indexed
@@ -13,9 +13,9 @@ Send GET request for all combinations of reasonable urls to find hidden exams
 pri download files where status_code == httplib.OK
 
 sanic:
-found 2d platformer source (pygame)
-Pulled figures from sprites, adding backgrounds and platforms
-scripts for merging background images using imagemagick
+-found 2d platformer source (pygame)
+-Pulled figures from sprites, adding backgrounds and platforms
+-scripts for merging background images using imagemagick
 
 lth:
 Java (AWT/Swing) (for GUI)
@@ -68,16 +68,16 @@ ffmpeg converting multimedia, extracting streams, muxing
 image and video compression in matlab
 
 video compression master thesis:
-excel (openpyxl, writing to spreadsheet from python, formatting, array formulas)
-calculating bitrate, psnr (mse quality)
-cluster, asynchronous locking
-modified coder and decoder
-boost program_options
-logging, analysing log files
-python starting subprocesses, regex to extract info from output
+-excel (openpyxl, writing to spreadsheet from python, formatting, array formulas)
+-calculating bitrate, psnr (mse quality)
+-cluster, asynchronous locking
+-modified coder and decoder
+-boost program_options
+-logging, analysing log files
+-python starting subprocesses, regex to extract info from output
 portability (windows/linux executables, CRLF/LF)
-handling parsing filenames and paths (relative/absolute)
-report written in latex
+-handling parsing filenames and paths (relative/absolute)
+-report written in latex
 
 
 
