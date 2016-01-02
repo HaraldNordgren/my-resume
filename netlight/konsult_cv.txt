@@ -1,10 +1,21 @@
-rym_adder:
-splinter (selenium front-end?)
-regex (language analysis)
-argsparse
+rateyourmusic/betting-crawler:
+crawl html (beatiful soup, extract bandcamp album info)
+Bandcamp has no API, Spotify has one and a python lib for interacting with it
+navigate javascript websites, downloading and uploading images
+(splinter, selenium front-end)
+cookie handling
+regex (language analysis, correcting capitalization)
+argsparse for comman-line args, configparser for reading/writing cfg files
+
+extentor-script:
+I discovered a pattern in the old exams urls, but servers are not indexed
+Send GET request for all combinations of reasonable urls to find hidden exams
+pri download files where status_code == httplib.OK
 
 sanic:
-pygame
+found 2d platformer source (pygame)
+Pulled figures from sprites, adding backgrounds and platforms
+scripts for merging background images using imagemagick
 
 lth:
 Java (AWT/Swing) (for GUI)
@@ -12,7 +23,7 @@ OOP
 
 version control:
 svn
-git (github)
+git (github, subtrees, smudge filters)
 
 test first:
 JUnit
@@ -32,12 +43,14 @@ computer security:
 cetificates, rsa, keystores
 users and login, password hashing
 
-setting up server:
-ssh, php, lsf (openlava)
+unix:
+setting up servers (ssh, php, lsf (openlava))
+scripts for handling system settings and keybindings
+script for trimming, resizing image and setting as terminal background
 
 memory managenement:
 two working implementations of my own malloc and free
-virtual memory, makefile
+virtual memory
 
 language analysis:
 spell-check
@@ -47,13 +60,25 @@ semantic analysis of grammar
 database:
 wrote c++ newsserver/database
 dirent, opendir (low-level disk-access, inodes)
+makefile (saving/modifying timestamp)
 
 audio and video:
 midi player written in haskell (haskore)
-ffmpeg converting multimedia, extracting streams
-image compression in matlab
+ffmpeg converting multimedia, extracting streams, muxing
+image and video compression in matlab
 
-video compression master thesis
+video compression master thesis:
+excel (openpyxl, writing to spreadsheet from python, formatting, array formulas)
+calculating bitrate, psnr (mse quality)
+cluster, asynchronous locking
+modified coder and decoder
+boost program_options
+logging, analysing log files
+python starting subprocesses, regex to extract info from output
+portability (windows/linux executables, CRLF/LF)
+handling parsing filenames and paths (relative/absolute)
+report written in latex
+
 
 
 
