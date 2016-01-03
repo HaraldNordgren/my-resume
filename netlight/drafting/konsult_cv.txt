@@ -25,8 +25,8 @@ version control:
 svn
 git (github, subtrees, smudge filters)
 
-test first:
-JUnit
+-test first:
+-JUnit
 
 Simple spreadsheet program: (EDAF10)
 Event handlers listeners

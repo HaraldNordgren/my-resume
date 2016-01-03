@@ -1,20 +1,18 @@
 WEBBUTVECKLARE
 
-Rateyourmusic (RYM) är en hemsida där användare kan katalogisera, betygsätta, recensera och diskutera all sorts utgiven musik. Användarna kan lägga till nya album och ladda upp skivomslag så länge dessa upgifter kan styrkas med hänvisning till ett fysiskt exemplar eller en officiell bandhemsida.
+Rateyourmusic är en hemsida där användare kan katalogisera, betygsätta, recensera och diskutera musik. Användare kan lägga till nya album så länge upgifterna kan styrkas med hänvisning till ett fysiskt exemplar eller en officiell bandhemsida.
 
-Bandcamp är en streamingsida för framförallt elektronisk musik. Artister och oberoende skivbolag publicerar musik som man kan lyssna på gratis i webbläsaren eller köpa och ladda ner. Sidan har för närvarande inget API.
+Bandcamp är en streamingsida för musik. Artister och oberoende skivbolag publicerar material som man kan lyssna på gratis i webbläsaren eller köpa och ladda ner.
 
-Spotify är en streamingtjänst för musik som erbjuder ett API för albuminformation.
+Jag har varit en aktiv användare av dessa tjänster i många år och tröttande på att manuellt flytta över info och fixa med formatering för att lägga till nya album på Rateyourmusic. Båda sidor saknar API, så jag skrev en webcrawler i Python som extraherar albuminformation från Bandcamps HTML och sedan med Splinter genererar ett broweserfönster som loggar in på Rateyourmusic och navigerar sidan för att skapa/uppdatera ett album med utgivningsdatum, genre, låtlista, korrigerar liten och stor bokstav i titlar, samt laddar upp skivomslag när bättre kvalitet finns att tillgå.
 
-Jag har varit en aktiv användare av dessa tjänster i många år och tröttande på att manuellt kopiera och flytta över info och fixa med formatering för att lägga till nya album på Rateyourmusic.
+Jag använde Chrome developer tools för att hitta rätt HTML-taggar för att på ett generiskt sätt navigera till rätt textrutor, knappar och menyer på hemsidorna.
 
-Jag skrev därför en webcrawler i Python som med hjälp BeatifulSoup extraherar tillgänlig information. För att navigera Rateyourmusics javascript använde jag Splinter som generar ett browserfönster som automatiseras för att logga in och navigera en hemsida. Jag använde Chrome och dess Developer tools för att hitta de HTML-taggar som motsvarade rätt textrutor, knappar och menyer på hemsidorna.
-
-Med en Bandcamp/Spotify URL och en Rateyourmusic-adress kan skriptet lägga till en artist i databasen, lägga till album, updatera existerande albuminfo, korrigera liten och stor bokstav i titlar med regex, samt ladda upp skivomslag automatiskt.
+Programmet kan även hämtar information från Spotifys API.
 
 
-Tekniker: Python 3, BeatifulSoup, Spotipy, Splinter, Argparse
-Miljöer: Ubuntu 14.04, Vim, Google Chrome
+Tekniker: Python, BeatifulSoup, Spotipy, Splinter/Selenium, Argparse, Perl, Git
+Miljöer: Ubuntu 14.04, Vim, Google Chrome Developer Tools
 
 
 
@@ -31,8 +29,8 @@ Jag deployar jobben på ett kluster för att köra parallelt, och använder fill
 
 Jag har lagt till features in kodare och avkodare, där jag jobbar nära bitströmmen, vilket har gett vissa vinster. 
 
-Tekniker: Python 2, C/C++, Shell-skript, Platform LSF, LaTeX
-Mijöer: Windows 7, Red Hat linux, Ubuntu 14.04, Visual Studio 2015, Sublime Text, Vim
+Tekniker: Python, C/C++, Boost, Shell-skript, Platform LSF, LaTeX
+Mijöer: Windows 7, Red Hat linux, Ubuntu 14.04, Visual Studio, Sublime Text, Vim, Git, SVN
 
 
 
@@ -46,3 +44,16 @@ Tekniker: Python 2, pygame, imagemagick
 Miljöer: Ubuntu 14.04, Vim
 
 
+WEBBUTVECKLARE
+
+Undersöktre möjligheterna att tjäna pengar genom att utnyttja arbitrage på odds mellan olika bettingsidor. Då sidorna ofta inte har öppna API och vägrar att bli crawlade krävs att man navigerar med Splinter för att dels extrahera information och sedan spela på de med bäst odds när det uppstår arbitrage.
+
+
+WEBBUTVECKLARE
+
+Skript för att hitta gömda extentor på LTH:s webbservrar.
+
+Jag märkte att genom att manipulera URL:en kunde man hitta filer som inte var länkade på kurshemsidorna. Då mapparna på servern inte var indexade kunde jag inte veta hur många gömda filer som fanns, men då addresserna ofta följer ett mönster med tentadatum och kurskod itererade jag över rimliga tentadatum för de senaste 10 åren, skickar get requests till servern och laddar ner de filer som returnerar statuskod OK.
+
+TEKNIKER: Python, requests, httplib, Git
+Miljöer: Ubuntu, Vim
