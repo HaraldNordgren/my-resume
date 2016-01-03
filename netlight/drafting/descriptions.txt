@@ -46,7 +46,8 @@ Miljöer: Ubuntu 14.04, Vim
 
 WEBBUTVECKLARE
 
-Undersöktre möjligheterna att tjäna pengar genom att utnyttja arbitrage på odds mellan olika bettingsidor. Då sidorna ofta inte har öppna API och vägrar att bli crawlade krävs att man navigerar med Splinter för att dels extrahera information och sedan spela på de med bäst odds när det uppstår arbitrage.
+Jag undersöktre möjligheterna att tjäna pengar genom att utnyttja arbitrage på odds mellan olika bettingsidor.
+Då sidorna ofta inte har öppna API och vägrar att bli crawlade krävs att man navigerar med Splinter för att dels extrahera information, och sedan för att spela på de med sidor med bäst odds när det uppstår arbitrage.
 
 
 WEBBUTVECKLARE

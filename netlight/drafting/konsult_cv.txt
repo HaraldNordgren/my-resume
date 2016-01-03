@@ -4,13 +4,13 @@ rateyourmusic/betting-crawler:
 -navigate javascript websites, downloading and uploading images
 -(splinter, selenium front-end)
 -cookie handling
-regex (language analysis, correcting capitalization)
--argsparse for comman-line args, configparser for reading/writing cfg files
+-regex (language analysis, correcting capitalization)
+-argsparse for command-line args, configparser for reading/writing cfg files
 
 extentor-script:
-I discovered a pattern in the old exams urls, but servers are not indexed
-Send GET request for all combinations of reasonable urls to find hidden exams
-pri download files where status_code == httplib.OK
+-I discovered a pattern in the old exams urls, but servers are not indexed
+-Send GET request for all combinations of reasonable urls to find hidden exams
+-pri download files where status_code == httplib.OK
 
 sanic:
 -found 2d platformer source (pygame)
@@ -18,33 +18,33 @@ sanic:
 -scripts for merging background images using imagemagick
 
 lth:
-Java (AWT/Swing) (for GUI)
-OOP
+-Java (AWT/Swing) (for GUI)
+-OOP
 
 version control:
-svn
-git (github, subtrees, smudge filters)
+-svn
+-git (github, subtrees, smudge filters)
 
 -test first:
 -JUnit
 
 Simple spreadsheet program: (EDAF10)
-Event handlers listeners
+-Event handlers listeners
 
 concurrecy:
-java threads
+-java threads
 semaphores, locks
 
 network:
-tcp sockets
+-tcp sockets
 remote controlling of a camera via API
 
 computer security:
-cetificates, rsa, keystores
+-cetificates, rsa, keystores
 users and login, password hashing
 
 unix:
-setting up servers (ssh, php, lsf (openlava))
+-setting up servers (ssh, php, lsf (openlava))
 scripts for handling system settings and keybindings
 script for trimming, resizing image and setting as terminal background
 
@@ -59,13 +59,13 @@ semantic analysis of grammar
 
 database:
 wrote c++ newsserver/database
-dirent, opendir (low-level disk-access, inodes)
-makefile (saving/modifying timestamp)
+-dirent, opendir (low-level disk-access, inodes)
+-makefile (saving/modifying timestamp)
 
 audio and video:
-midi player written in haskell (haskore)
-ffmpeg converting multimedia, extracting streams, muxing
-image and video compression in matlab
+-midi player written in haskell (haskore)
+-ffmpeg converting multimedia, extracting streams, muxing
+-image and video compression in matlab
 
 video compression master thesis:
 -excel (openpyxl, writing to spreadsheet from python, formatting, array formulas)
@@ -82,5 +82,4 @@ portability (windows/linux executables, CRLF/LF)
 
 
 
-fler hobby-projekt?
 projecteuler.net
