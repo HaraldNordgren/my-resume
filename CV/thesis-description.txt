@@ -1,0 +1,8 @@
+Jag forskar om videokomprimering inom H.265/HEVC-standarden. Jag jämför metoder för effektiv lagring och överföring av video i varierande upplösningar för realtidsanvänding i streamingtjänster.
+
+Jag har skrivit mina egna testskript för att köra tunga simuleringar på ett kluster och hämta in och strukturera stora datamängder i Excel. Programmering i Python, C/C++, Shell script och Perl.
+-------------------------------------------------------------------
+
+I am doing research in video compression within the H.265/HEVC standard. I compare methods for effective storing and transmitting video i varying resolutions for real-time applications in streaming services.
+
+I wrote my own test scripts for running heavy simulations in a cluster environment and for collecting and structuring large amounts of test data in Excel sheets. Programming in Python, C/C++, Shell script and Perl.

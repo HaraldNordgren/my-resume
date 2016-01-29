@@ -1,0 +1,12 @@
+Transfer Trail is a web-based game where the player tries to guess the name of a footballer based on his transfer history. This history is laid out step-by-step on a world map and more points are awarded for quick guesses.
+
+The Chrome extension utilizes the fact that the game prints all of its actions through console.log, so by injecting my script and redefining this function I can quickly match the given trail against a player from an associative array that I built up through playing the game, and select the correct answer.
+-----------------------------------------------------------
+
+Script for probing servers for hidden exams
+
+-----------------------------------------------------------
+
+Transfer Trail is a web-based game where the player tries to guess the name of a footballer based on his transfer history. This history is laid out step-by-step on a world map and points are awarded for correct guessed -- more points for quick guesses.
+
+The Chrome extension exploits the fact that the game prints all of its actions to console.log (nextTransfer, moveOn, gameOver, as well as each club like Benfica, Real Madrid or Manchester United), so by injecting my script and redefining this function I tap in to the control the flow of the game and can quickly match a given trail against an associative array of players that is built up by playing the game. After which I find the player and click the correct answer every time.
