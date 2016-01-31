@@ -1,6 +1,7 @@
 *.swp
 ~$*
 
+*.pdf
 *.log
 *.aux
 *.log
