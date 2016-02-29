@@ -1,4 +1,4 @@
-Basic skills: batch, excel
+Basic skills: batch, excel, databases (MySQL, PostgreSQL)
 
 Projects:
 2d platformer from open-source python template
