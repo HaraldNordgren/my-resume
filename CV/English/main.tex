@@ -23,6 +23,8 @@
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
+%\usepackage{xspace}
+
 % personal data
 \name{Harald}{Nordgren}
 \title{Software Developer}                               % optional, remove / comment the line if not wanted
@@ -69,8 +71,10 @@
 
 \section{Master thesis}
 \cvitem{Title}{\emph{Guided Transcoding for Next-Generation Video Coding (HEVC)}}
-%\cvitem{supervisors}{Supervisors}
-\cvitem{Description}{\\\-\hspace{0.4cm}I am doing research in video compression within the H.265/HEVC standard. I compare methods for effectively storing and transmitting video in varying resolutions for real-time application in streaming services. The project thus far has generated one research article.\\\-\hspace{0.4cm}I wrote my own test scripts for running heavy simulations in a cluster environment, and for collecting large amounts of test data and automatically structuring it in Excel sheets. I use Python, C/C++ and Shell scripts on a day-to-day basis.}
+%\cvitem{Kenneth Andersson}{Supervisors}
+%\cvitem{Description}{\\\-\hspace{0.4cm}I am doing research in video compression within the H.265/HEVC standard. I compare methods for effectively storing and transmitting video in varying resolutions for real-time application in streaming services. The project thus far has generated one research article.\\\-\hspace{0.4cm}I wrote my own test scripts for running heavy simulations in a cluster environment, and for collecting large amounts of test data and automatically structuring it in Excel sheets. I use Python, C/C++ and Shell scripts on a day-to-day basis.}
+
+\cvitem{Description}{\\\-\hspace{0.4cm}I am doing research at Ericsson on adaptive streaming within the HEVC/H.265 standard. We developed two new methods for transcoding video at much-reduced complexity that under certain conditions can save 20--30\% storage space.\\\-\hspace{0.4cm}I wrote my own test suite for running heavy simulations in a cluster environment, and for collecting large amounts of data and structuring it in Excel. I use Python, C/C\texttt{++} and Bash scripts on a day-to-day basis.}
 
 %{I compared methods for transmitting downscaled versions of high-quality video in more effecient ways. I investigated the performance effects of the number of downscaler taps, as well as implemented experimental algorithms for lossless bitrate reductions.}
 
@@ -103,8 +107,8 @@
 %\cvitemwithcomment{Language 3}{Skill level}{Comment}
 
 \section{Programming skills}
-\programmingitem{Advanced}{}{Python, Java, C/C\texttt{++}, Matlab,\\Shell script, Unix terminal (git, vim,\\grep, ssh, sed, awk, redirection, pipes)\\~}
-\programmingitem{Basic skills}{}{JavaScript, HTML, LaTeX, Haskell,\\Perl regex, Batch script, Maple\\~}
+\programmingitem{Advanced}{}{Python, Java, C/C\texttt{++}, Matlab, LaTeX\\Shell script, Unix terminal (git, vim,\\grep, ssh, sed, awk, redirection, pipes)\\~}
+\programmingitem{Basic skills}{}{JavaScript, HTML, Haskell,\\Perl regex, Batch script, Maple,\\Databases (MySQL, PostgreSQL)\\~}
 \programmingitem{Beginner}{}{Ruby, CSS, MIPS Assembly}
 %\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
 
@@ -159,6 +163,7 @@ Printout from university grades database given on request.
 \makelettertitle
 
 \input{personal-letter.tex}
+\enlargethispage{3\baselineskip}
 
 \makeletterclosing
 
