@@ -1,6 +1,19 @@
-Basic skills: batch, excel, databases (MySQL, PostgreSQL)
+Basic skills: batch, excel, databases (MySQL, PostgreSQL), machine learning
+
+Chrome extensions (Js), Qt, 
 
 Projects:
 2d platformer from open-source python template
 webcrawler (bandcamp-to-rym) (ETL)
 Extentor-skript
+
+
+Contributions to open-source projects: Qt, qBittorrent, last.fm web scrobbler, oh-my-zsh
+
+Individual projects: Bot for crawling Bandcamp/Spotify and submitting info to Rateyourmusic, Betting crawler that finds arbitrages, Script for probing LTH servers to find hidden exams, Adapted 2D platformer into Sonic the Hedgehog clone, Chrome extension for playing web games automatically, extension for fidning and torrenting movies, miscellaneous script for manipulating the terminal emulator
+
+Databases: I have scripted MySQL and PostgreSQL, and implemented a basic database in  C/C++.
+
+Sound & Video: Compression algorithms, bitstream manipulation, ffmpeg scripts, MIDI composer in Haskell
+
+Memory management (Malloc)
