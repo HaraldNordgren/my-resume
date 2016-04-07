@@ -1,16 +1,33 @@
+Programming skills
+==================
+
+
+Divided by language
+===================
+
+Python: Crawler for finding arbitrages between betting sites (OOP Python, Heroku, MySQL, PostgreSQL), Extract info from Bandcamp/Spotify to submit albums to Rateyourmusic (HTML, Splinter/Selenium), Probe LTH servers with HTTP requests to find hidden exams, Sonic the Hedgehog clone adapted from generic 2D platformer, machine learning
+
+C/C++: Contributed to Qt project (GUI, unit tests), qBittorrent, implemented database/newsgroup, wrote malloc/free from scratch
+
+Chrome extensions in JavaScript: Contributed to Web Scrobbler (Soundcloud to Last.fm), Extension for playing web game automatically, extension for fidning and torrenting movies.
+
+Shell: Contributed to oh-my-zsh, git scripts, installation scripts, audio & video editing with ffmpeg, config files, ssh, sed, awk, redirection
+
+Other languages: Java, Matlab (image & video compression), Haskell, Ruby, Perl regex, Batch, Maple, MIPS Assembly, LaTeX, Excel scripting
+
+
+Divided by collaboration type
+=============================
+
+Open-source contributions: Qt project (C++, unit tests), qBittorrent, web scrobbler (Js, ETL from Soundcloud to Last.fm), oh-my-zsh (Shell)
+
+Individual projects: Crawler to find arbitrages between betting sites (OOP Python, Heroku, PostgreSQL), Bot for crawling Bandcamp/Spotify to submit album info to Rateyourmusic (Python, HTML, Splinter/Selenium), Script for probing LTH servers to find hidden exams (Python), Sonic the Hedgehog clone adapted from generic 2D platformer (Python), Chrome extension for playing web games automatically (JS), Chrome extension for fidning and torrenting movies, miscellaneous script for working with the terminal
+
 Basic skills: batch, excel, databases (MySQL, PostgreSQL), machine learning
 
-Chrome extensions (Js), Qt, 
 
-Projects:
-2d platformer from open-source python template
-webcrawler (bandcamp-to-rym) (ETL)
-Extentor-skript
-
-
-Contributions to open-source projects: Qt, qBittorrent, last.fm web scrobbler, oh-my-zsh
-
-Individual projects: Bot for crawling Bandcamp/Spotify and submitting info to Rateyourmusic, Betting crawler that finds arbitrages, Script for probing LTH servers to find hidden exams, Adapted 2D platformer into Sonic the Hedgehog clone, Chrome extension for playing web games automatically, extension for fidning and torrenting movies, miscellaneous script for manipulating the terminal emulator
+Divided by areas
+================
 
 Databases: I have scripted MySQL and PostgreSQL, and implemented a basic database in  C/C++.
 
