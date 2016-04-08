@@ -186,10 +186,11 @@
 \renewcommand*{\programmingitem}[4][.25em]{%
   \savebox{\cvitemwithcommentmainbox}{\ifthenelse{\equal{#2}{}}{}{\hintstyle{#2}: }#3}%
   \setlength{\cvitemwithcommentmainlength}{\widthof{\usebox{\cvitemwithcommentmainbox}}}%
-  \setlength{\cvitemwithcommentcommentlength}{\maincolumnwidth-\separatorcolumnwidth-\cvitemwithcommentmainlength}%
+  %\setlength{\cvitemwithcommentcommentlength}{\maincolumnwidth-\separatorcolumnwidth-\cvitemwithcommentmainlength-50pt}%
+  \setlength{\cvitemwithcommentcommentlength}{305pt}%
   \begin{minipage}[t]{\cvitemwithcommentmainlength}\ifthenelse{\equal{#2}{}}{}{\hintstyle{#2} }#3\end{minipage}%
   \hfill% fill of \separatorcolumnwidth
-  \begin{minipage}[t]{\cvitemwithcommentcommentlength}\raggedleft\small\itshape#4\end{minipage}%
+  \begin{minipage}[t]{\cvitemwithcommentcommentlength}\raggedleft\small\itshape#4\\~\end{minipage}%
   \par\addvspace{#1}}
 
 
@@ -213,11 +214,11 @@
 \renewcommand*{\cventry}[7][.25em]{
   \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}%
 	  {\bfseries #4} & {\bfseries #5} \\%
-	  {\itshape #3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
+	  {#3\ifthenelse{\equal{#6}{}}{}{, #6}} & {\itshape #2}\\%
   \end{tabular*}%
   \ifx&#7&%
-    \else{\\\vbox{\small#7\\}}\fi%
-  %\vspace{1.5mm}
+    \else{\\\vbox{\small\hspace{1pt}#7\vspace{1mm}}}\fi%
+  \vspace{0.5mm}
   \par\addvspace{#1}}
 
 \newbox{\cvitemwithcommentmainbox}
@@ -226,7 +227,8 @@
 \renewcommand*{\cvitemwithcomment}[4][.25em]{%
   \savebox{\cvitemwithcommentmainbox}{\ifthenelse{\equal{#2}{}}{}{\hintstyle{#2}: }#3}%
   \setlength{\cvitemwithcommentmainlength}{\widthof{\usebox{\cvitemwithcommentmainbox}}}%
-  \setlength{\cvitemwithcommentcommentlength}{\maincolumnwidth-\separatorcolumnwidth-\cvitemwithcommentmainlength}%
+  %\setlength{\cvitemwithcommentcommentlength}{\maincolumnwidth-\separatorcolumnwidth-\cvitemwithcommentmainlength-50pt}%
+  \setlength{\cvitemwithcommentcommentlength}{305pt}%
   \begin{minipage}[t]{\cvitemwithcommentmainlength}\ifthenelse{\equal{#2}{}}{}{\hintstyle{#2}: }#3\end{minipage}%
   \hfill% fill of \separatorcolumnwidth
   \begin{minipage}[t]{\cvitemwithcommentcommentlength}\raggedleft\small\itshape#4\end{minipage}%

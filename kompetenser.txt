@@ -13,7 +13,7 @@ Chrome extensions in JavaScript: Contributed to Web Scrobbler (Soundcloud to Las
 
 Shell: Contributed to oh-my-zsh, git scripts, installation scripts, audio & video editing with ffmpeg, config files, ssh, sed, awk, redirection
 
-Other languages: Java, Matlab (image & video compression), Haskell, Ruby, Perl regex, Batch, Maple, MIPS Assembly, LaTeX, Excel scripting
+Other languages: Java (real-time programming, Project Euler), Matlab (statistics, image & video compression), Haskell, Ruby, Perl (regex, language analysis), Batch, Maple, MIPS Assembly, LaTeX, Excel scripting
 
 
 Divided by collaboration type
