@@ -1,6 +1,8 @@
 #!/bin/bash
 
-echo -ne '\0033\0143'
+set -e
+
+#echo -ne '\0033\0143'
 
 pdflatex main.tex
 pdfseparate main.pdf page%d

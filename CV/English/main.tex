@@ -17,14 +17,17 @@
 % character encoding
 \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+\usepackage{hyphsubst}
 \usepackage[english]{babel}
+\hyphenation{man-agement}
 
 % adjust the page margins
-\usepackage[scale=0.75, top=2.8cm, bottom=2cm]{geometry}
+\usepackage[scale=0.75, top=2cm, bottom=1cm]{geometry}
 %\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 %\usepackage{xspace}
+%\usepackage{multicol}
 
 % personal data
 \name{Harald}{Nordgren}
@@ -57,14 +60,13 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace*{-1\baselineskip}
+%\vspace*{-1\baselineskip}
+\vspace*{-2\baselineskip}
 
-
-%Cantemo
 
 \section{Experience}
 %\subsection{Vocational}
-\cventry{April 2016 -- Present}{Sofware Developer}{Cantemo}{Stockholm, Sweden}{}{I work on Cantemo Portal website/webserver development with a team of 12 people. We do media-asset management (MAM), handling video content for ABC, HBO, Disney and Apple. Back-end development in Python/Django. Front-end in JavaScript/React/HTML/CSS. Elasticsearch, Docker, Postgres, PyCharm.
+    \cventry{April 2016 -- Present}{Sofware Developer}{Cantemo}{Stockholm, Sweden}{}{I work on website/webserver development with a small team. We do media-asset management, handling video content for ABC, HBO, Disney and Apple. Back-end development in Python (Django/Flask) with microservices (Docker/Kubernetes/Vagrant). Front-end developement in JavaScript (React, Backbone). Elasticsearch API, PostgreSQL, PyCharm.
 %\newline{}%
 %Detailed achievements:%
 %\begin{itemize}%
@@ -98,7 +100,6 @@
 
 
 
-
 \section{Education}
 \cventry{2009 -- 2016}{Master of Science in Computer Science}{Lund University, Faculty of Engineering (LTH)}{Lund, Sweden}{}{Specializing in Software development. Java, C/C++, Matlab, Shell, Haskell}
 \cventry{August 2013 -- May 2014}{Exchange studies}{University of Illinois, College of Engineering}{Urbana--Champaign, Illinois, USA}{}{Mathematics, Control theory, signal processing, databases}
@@ -107,23 +108,39 @@
 
 
 \section{Languages}
-\cvitemwithcomment{Swedish}{Fluent}{My native language}
-\cvitemwithcomment{English}{Fluent}{I went to school in the United States for year. Spoke English everyday. I work in a English-speaking company.}
+%\setlength{\leftskip}{2.5cm}
+%\begin{multicols}{2}
+\cvitemwithcomment{Swedish}{Native}{}
+\cvitemwithcomment{English}{Fluent}{}
+%\end{multicols}
+%\setlength{\leftskip}{0pt}
+
+
+%\cvitemwithcomment{Swedish}{Fluent}{My native language}
 %\cvitemwithcomment{Language 3}{Skill level}{Comment}
 
-\section{Programming}
-%\section{Frameworks and technologies}
+%\section{Programming}
+\section{Technologies and frameworks}
 
 
-\programmingitem{Python}{}{Django request handling, , Program for finding arbitrages between betting sites (Heroku, Postgre- SQL), ETL between Bandcamp/Spotify and Rateyourmusic (Beautiful Soup, HTML, Splinter/Selenium), Script to probe LTH servers with HTTP requests to find non-indexed exams, Sonic the Hedgehog clone adapted from generic 2D platformer, basic machine learning (scikit-learn)}
+%\programmingitem{Python}{}{Django request handling, , Program for finding arbitrages between betting sites (Heroku, Postgre- SQL), ETL between Bandcamp/Spotify and Rateyourmusic (Beautiful Soup, HTML, Splinter/Selenium), Script to probe LTH servers with HTTP requests to find non-indexed exams, Sonic the Hedgehog clone adapted from generic 2D platformer, basic machine learning (scikit-learn)}
+%\programmingitem{C/C\texttt{++}}{}{Contributed to Qt project and qBittorrent (Boost, GUI, unit tests, continuous integration), implemented database/newsgroup, wrote malloc/free from scratch (Makefile)}
+%\programmingitem{JavaScript/Web}{}{Contributed to Web Scrobbler plugin (Adds Soundcloud data to Last.fm), Chrome extension for automating web games, extension for finding and downloading movies, Django templates, HTML, CSS styling}
+%\programmingitem{Shell}{}{Docker scripting, automated builds, git (branching, submodules, rebasing, filtering), ffmpeg (audio and video editing), contributed to oh-my-zsh, config files, ssh, sed, awk, ftp, redirection}
+%\programmingitem{Miscellaneous}{}{Java (real-time programming, Swing, Project Euler), Matlab (statistics, video compression), Perl (regex, language analysis), Haskell, Ruby, Batch script, Maple, MIPS Assembly, LaTeX, Excel scripting}
 
-\programmingitem{C/C\texttt{++}}{}{Contributed to Qt project and qBittorrent (Boost, GUI, unit tests, continuous integration), implemented database/newsgroup, wrote malloc/free from scratch (Makefile)}
 
-\programmingitem{JavaScript/Web}{}{Contributed to Web Scrobbler plugin (Adds Soundcloud data to Last.fm), Chrome extension for automating web games, extension for finding and downloading movies, Django templates, HTML, CSS styling}
 
-\programmingitem{Shell}{}{Docker scripting, automated builds, git (branching, submodules, rebasing, filtering), ffmpeg (audio and video editing), contributed to oh-my-zsh, config files, ssh, sed, awk, ftp, redirection}
+\programmingitem{Python}{}{Django\slash{}Flask (API design, HTTP requests, HTML templates, form data), Elasticsearch, Webscraper for betting arbitrages, migrate music data from Spotify\slash{}Bandcamp to Rateyourmusic (Beautiful Soup, Splinter\slash{}Selenium), Sonic the Hedgehog clone, machine learning}
 
-\programmingitem{Miscellaneous}{}{Java (real-time programming, Swing, Project Euler), Matlab (statistics, video compression), Perl (regex, language analysis), Haskell, Ruby, Batch script, Maple, MIPS Assembly, LaTeX, Excel scripting}
+\programmingitem{JavaScript}{}{React, Backbone, CSS, HTML, Chrome extensions (Movie downloader, automating web games, contributed to Web scrobbler)}
+
+\programmingitem{C/C\texttt{++}}{}{Contributed to qBittorrent (Boost, unit tests) and Qt projects, implemented newsgroup/database, wrote malloc/free from scratch}
+
+\programmingitem{Sysadmin}{}{Shell scripting (curl, ssh, ffmpeg, awk), Clustering (Docker, Kubernetes, Vagrant, Platform LSF), Virtualization (OS X, Ubuntu, Red Hat, CentOS, CoreOS, Alpine, Windows), package management (npm, pip, brew, apt-get), Heroku, databases (PostgreSQL, MySQL)}
+
+\programmingitem{Miscellaneous}{}{Building software (Git, Grunt, Makefile, Jenkins), Java (Concurrency, Swing), Matlab (statistics, image compression), Haskell, Perl (language processing), Batch script, Excel scripting, LaTeX, MIPS Assembly, Ruby, Maple, Project Euler}
+
 
 %\programmingitem{Advanced}{}{Python, Java, C/C\texttt{++}, Matlab, LaTeX,\\Shell scripting (bash, zsh, tcsh, git,\\vim, grep, ssh, sed, awk, redirection)}
 %\programmingitem{Basic skills}{}{JavaScript, HTML, Haskell,\\Perl regex, Batch script, Maple,\\Databases (MySQL, PostgreSQL)}
