@@ -9,3 +9,5 @@ pdfseparate main.pdf page%d
 
 mv page1 'pdfs/CV.pdf'
 mv page2 'pdfs/Personal Letter.pdf'
+
+./letter-to-plaintext.sh
